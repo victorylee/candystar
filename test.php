@@ -70,7 +70,7 @@ for($i=0;$i<5;$i++){
     echo '<br/>';
 }
 
-//echo $sec;
+echo $sec;
 //echo '<br/>';
 //echo date("Y-m-d H:i:s", $sec);
 //
