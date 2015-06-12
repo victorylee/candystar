@@ -1,0 +1,454 @@
+/*头部横条：欢迎  收藏  热线电话*/
+div.headline{
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+    color: #FFF;
+    background-color: #075d00;
+    font-size: 12px;
+}
+
+div.headline a{
+    color: #FFF;
+}
+/*结束*/
+/*头部信息：logo  导航菜单*/
+div.header{
+    width: 100%;
+    height: 104px;
+    background: url(/images/header_bg_1.png) repeat-x;
+}
+
+div.header div.nav{
+    margin-top: 50px;
+    text-align: right;
+    padding-right: 0px;
+}
+
+div.header div.nav a{
+    border-radius: 5px;
+    padding: 5px 14px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    margin: 0 5px;
+    color: #236911;
+    line-height: 30px;
+}
+
+div.header div.nav a span{
+    width: 200px;
+}
+
+div.header div.nav a.selected,div.header div.nav a:hover{
+    background: #236911;
+    color: white;
+}
+/*结束*/
+
+/*筛选项区域*/
+div.filterbox{
+    border: 1px solid #CCC;
+}
+
+div.filterbox div.header{
+    width: 100%;
+    height: 36px;
+    border-bottom: 1px solid #CCC;
+    background: #EFEFEF;
+    background: -webkit-gradient(linear,left top,left bottom,from(#FDFDFD),to(#EFEFEF));
+    background: -webkit-linear-gradient(top,#FDFDFD,#EFEFEF);
+    background: -o-linear-gradient(top,#FDFDFD, #EFEFEF);
+    background: -moz-linear-gradient(top, #FDFDFD, #EFEFEF);
+    background: -ms-linear-gradient(top , #FDFDFD, #EFEFEF);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FDFDFD', endColorstr='#EFEFEF');
+}
+
+div.filterbox div.header ul.tabs{
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+div.filterbox div.header ul.tabs li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+div.filterbox div.header ul.tabs a {
+    text-align: center;
+    color: #959595;
+    font-size: 14px;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    line-height: 15px;
+    margin-bottom: -2px;
+}
+
+div.filterbox div.header ul.tabs a:hover,div.filterbox div.header ul.tabs a.selected{
+    background: white;
+    color: #000;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+div.filterbox table{
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+div.filterbox table td.category{
+    width: 80px;
+    padding: 5px 10px;
+    vertical-align: top;
+}
+
+div.filterbox table td.category span{
+    background: #6B3 url(/images/b_marked.gif) no-repeat right center;
+    padding: 5px 20px 5px 15px;
+    color:white;
+    line-height: 200%;
+
+}
+
+div.filterbox table td.items{
+    width: 880px;
+    padding: 5px 10px;
+    vertical-align: top;
+}
+
+div.filterbox table td.items a{
+    color:#666;
+    padding: 5px 10px;
+    font-weight: 900;
+    line-height: 200%;
+}
+
+div.filterbox table td.items a.selected,div.filterbox table td.items a:hover{
+    color:#FFF;
+    background: #F90;
+}
+
+div.filterbox table td.items a.all,div.filterbox table td.items a.all:hover{
+    background:#35A;
+    font-weight: normal;
+    color: white;
+    padding: 5px 10px;
+    line-height: 200%;
+}
+/*结束*/
+/*试题块*/
+div.question{
+    margin-top: 20px;
+    border: 1px solid #DBDFE2;
+    width: 100%;
+    position: relative;
+    line-height:20px;
+}
+
+div.question div.header{
+    width: 100%;
+    border-top: 2px solid #318509;
+    border-bottom: 1px solid #DBDFE2;
+    height: 40px;
+    line-height: 40px;
+    background: #FFF;
+    background: -webkit-gradient(linear,left top,left bottom,from(#FCFDFB),to(#F1F1F1));
+    background: -webkit-linear-gradient(top,#FCFDFB,#F1F1F1);
+    background: -o-linear-gradient(top,#FCFDFB, #F1F1F1);
+    background: -moz-linear-gradient(top, #FCFDFB, #F1F1F1);
+    background: -ms-linear-gradient(top , #FCFDFB, #F1F1F1);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FCFDFB', endColorstr='#F1F1F1');
+    position:relative;
+}
+
+div.question div.header span.title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+div.question div.material{
+    font-size: 12px;
+    padding: 5px 10px;
+    width: 940px;
+    line-height: 150%;
+}
+div.question div.content img{
+    vertical-align: middle;
+}
+div.question div.content table{
+    margin-left:20px;
+    font-size: 12px;
+}
+div.question div.content table  td{
+    display: inline-block;
+    line-height:150%;
+}
+div.question div.content table tr td p{
+    display: inline;
+}
+div.question div.ask{
+    font-size: 12px;
+    padding: 5px 10px;
+    width: 940px;
+    line-height: 150%;
+    font-weight: bold;
+}
+div.question div.ask table{
+    font-weight: normal;
+}
+div.question div.misc{
+    font-size: 12px;
+    padding: 5px 10px;
+    width: 940px;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px dashed #A7A7A7;
+    margin-top: 10px;
+}
+
+div.question div.misc a.analyze_open{
+    display: block;
+    width: 70px;
+    height: 30px;
+    background: url(/images/analyze.png) no-repeat 0 0;
+    margin-top: 5px;
+}
+
+div.question div.misc a.analyze_closed{
+    display: block;
+    width: 70px;
+    height: 30px;
+    background: url(/images/analyze.png) no-repeat 0 -29px;
+    margin-top: 5px;
+}
+
+div.question div.misc span.topic{
+    background:#2F850A;padding: 1px 2px;color:white;
+}
+
+div.question div.misc a.topic{
+    color:#333;
+    margin: 0 5px;
+    margin-right: 20px;
+}
+
+div.question div.misc span.video{
+    background:#0061C9;
+    padding:1px 2px;
+    color:white;
+}
+
+div.question div.misc a.video{
+    border: 1px solid #0160CA;
+    background: #EBFFE1;
+    color:black;
+    padding: 0 5px;
+    margin-right: 20px;
+}
+
+div.question div.misc span.kind{
+    background:#0061C9;
+    padding: 1px 2px;
+    color:white;
+}
+
+div.question div.misc a.kind{
+    color:#333;
+    margin: 0 5px;
+    margin-right: 20px;
+}
+
+div.question div.misc span.hardlevel{
+    background:#FFC000;
+    padding: 1px 2px;
+    color:white;
+}
+
+div.question div.misc a.hardlevel{
+    border: 1px solid #FCBF02;
+    background: #FFF6D9;
+    color:black;
+    padding: 0 5px;
+    margin-right: 20px;
+}
+
+div.question div.answer{
+    line-height: 150%;
+    border-top: 1px solid #DBDFE2;
+    /*
+    font-weight: bold;
+    */
+    padding: 10px 10px 10px 10px;
+    width: 940px;
+}
+
+div.question h3.analyze{
+    line-height: 150%;
+    border-top: 1px dashed #DBDFE2;
+    padding: 10px 10px 10px 10px;
+}
+
+div.question div.analyze{
+    line-height: 150%;
+    padding: 10px 10px 10px 40px;
+}
+/*结束*/
+
+/*<名校导学>：（已）关注按钮>*/
+span.attention_on{
+    width:63px;
+    height:32px;
+    line-height:24px;
+    border:0px;
+    background:url(/images/attention.png) no-repeat 0 -32px;
+    text-align:center;
+    position:absolute;
+    top:20px;
+    left:0px;
+    *left:-60px;
+    cursor:pointer;
+    z-index:1000;
+}
+
+span.attention_off{
+    width:63px;
+    height:32px;
+    line-height:24px;
+    border:0px;
+    background:url(/images/attention.png) no-repeat 0 0;
+    text-align:center;
+    position:absolute;
+    top:20px;
+    left:0px;
+    *left:-60px;
+    cursor:pointer;
+}
+/*结束*/
+/*确认、取消按钮*/
+.btn_on{
+    color:#FFFFFF;
+    text-align:center;
+    display:block;
+    width:50px;
+    height:23px;
+    line-height:23px;
+    cursor:pointer;
+    text-decoration:none;
+    background-color:#27DE9C;
+    float:right;
+    margin-right:10px;
+}
+.btn_off{
+    color:#FFFFFF;
+    text-align:center;
+    display:block;
+    width:50px;
+    height:23px;
+    line-height:23px;
+    cursor:pointer;
+    text-decoration:none;
+    background-color:#ccc;
+    float:right;
+    margin-right:10px;
+}
+/*结束*/
+div.footer{
+    width: 100%;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding:30px 0px 20px;
+    background-color:#27641a;
+    color:#ddd;
+    margin-top:5px;
+}
+
+div.footer p{
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+div.footer a{
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div.foot_nav{
+    height:30px;
+    line-height:30px;
+
+}
+div.foot_nav a{
+    color:#ddd;
+}
+/*结束*/
+/*回到顶部*/
+p#back-to-top{
+    margin-bottom:0px;
+}
+p#back-to-top a{
+    text-align:center;
+    text-decoration:none;
+    color:#d1d1d1;
+    display:block;
+    width:55px;
+    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+    -moz-transition:color 1s;
+    -webkit-transition:color 1s;
+    -o-transition:color 1s;
+}
+p#back-to-top a:hover{
+    color:#979797;
+}
+p#back-to-top a span{
+    background:url(/images/top.png) no-repeat 0 0;
+    border-radius:1px;
+    display:block;
+    height:55px;
+    width:55px;
+}
+#back-to-top a:hover span{
+    background:url(/images/top.png) no-repeat 0 -55px;
+}
+.questionCount{
+    width: 55px;
+    height: 20px;
+    text-align: center;
+    background-color:#aaa;
+}
+.questionCount a{
+    color: #FFF;
+    font-size: 20px;
+}
+/*结束*/
+/*分页样式*/
+div.nav_page{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    clear: both;
+}
+div.nav_page a{
+    border: 1px solid #aaa;
+    color: #333;
+    padding: 3px 8px;
+    line-height: 20px;
+}
+div.nav_page a.selected{
+    color: #fff;
+    background: #6b3;
+    border: 1px solid #390;
+    cursor: text;
+}
+div.nav_page a.pageNum:hover{
+    color: #fff;
+    background: #6b3;
+    border: 1px solid #390;
+}
+/*结束*/

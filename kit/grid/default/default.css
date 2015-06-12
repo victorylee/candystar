@@ -1,0 +1,212 @@
+/* icons from JQueryUI, required by widgets */
+.icon {
+    overflow: hidden; float: left; width: 16px; height: 16px;
+    background-image: url(icons.png);
+}
+.icon-none { background: none; }
+.icon-triangle-1-e { background-position: -32px -16px; }
+.icon-triangle-1-n { background-position: 0 -16px; }
+.icon-triangle-1-s { background-position: -64px -16px; }
+.icon-minus { background-position: -48px -128px; }
+.icon-plus { background-position: -16px -128px; }
+
+/* combo start */
+.combo .head {
+    border: 1px solid #CCC; background-color: #FFF; overflow: hidden;
+}
+.combo .head input {
+    background-color: transparent; border:none; width: 100%;
+}
+.combo .head .btn { position: relative; float: right; border-left: 1px #CCC solid; }
+
+.combo>.body {
+    border-right: 1px solid #CCCCCC; float: left; z-index: 99999;
+    position: absolute; background: #FFF; overflow-y: auto; overflow-x: hidden;
+}
+.combo .tr { white-space: nowrap; display: inline-block; width: 100%; }
+.combo .td {
+    white-space: nowrap; display: inline-block;
+    cursor: default; overflow: hidden; background-color: #FFF;
+    height: 32px; line-height: 32px; vertical-align: middle;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-top: none;
+}
+.combo .tr.hover .td { background-color: #FBCC88; }
+.combo .tr.selected .td { background-color: #FBEC88; }
+/* combo end*/
+
+/* grid start*/
+.grid .main { overflow-x: auto; overflow-y: hidden; color: #000; border: 0px solid #CCC;}
+.grid .head {
+	white-space: nowrap; height: 34px; line-height: 34px; overflow: hidden;
+	float: left; border-left: 1px solid #CCC; border-right: none;
+}
+.grid .head input { float: left; }
+.grid>.main>.body { overflow: hidden; }
+.grid .tt {
+	overflow-x: hidden; overflow-y: hidden;
+	border-left: 1px solid #CCC;
+}
+.grid .tr {
+	white-space: nowrap; display: inline-block;
+	border-bottom: 1px solid #CCC;
+}
+.grid .th, .grid .td {
+	white-space: nowrap; display: inline-block; cursor: default;
+	overflow: hidden; border-right: 1px solid #CCC;
+}
+.grid .th {
+	text-align: left; height: 32px; line-height: 32px; -moz-user-select: none;
+	color: #000; vertical-align: middle; background-color: #CAE5E8;
+	border-top: 1px solid #CCC; border-bottom: 1px solid #CCC;
+    padding-left:5px;
+}
+.grid .tth>div>.title { border-right: 1px solid #CCC; }
+.grid .tr>.td {
+	height: 32px; line-height: 32px; vertical-align: middle;
+    padding:0 5px;
+}
+.grid .ybar { width: 18px; float: right; overflow-y: auto; margin-top: 32px; }
+.grid .td input { float: left; }
+.grid .sort {
+	float: right; height: 22px; padding-top: 2px; border-left: 1px solid #CAE5E8;;
+}
+.grid .sort:hover { background-color: #97CBFF; }
+.grid .sizer {
+	cursor: e-resize; width: 2px; float: right; height: 32px;
+}
+.grid .dropable { background-color: #97CBFF; }
+.grid .title { overflow: hidden; }
+/*.grid .title:hover { background-color: #97CBFF; }*/
+.grid .h1 { background-color: #CEE3F6; }
+.grid .tr.h2o .td { background-color: #F7F7F7; }
+.grid .tr.h2e .td { background-color: #FFF; }
+.grid .tr:hover .td { background-color: #D9EBF5; }
+.grid .tr.selected .td { background-color: #FBEC88; }
+
+.dragHelper {
+	border: 1px dashed #DDD; background-color: #FFF; position: absolute;
+	padding: 2px 4px 2px 4px; float: left; z-index: 99;
+}
+
+.pager { margin-top: 10px; height: 32px; text-align: center;}
+/*.pager .pageNo { margin: 2px 2px; padding: 2px; border: 1px solid transparent;cursor: pointer;border: 1px;display: inline-block;}*/
+/*.pager .pageNo[action]:hover { border: 1px solid #DDD; background-color: blue;}*/
+.pager .button {
+	height: 32px; line-height: 32px; padding: 4px 8px; cursor: pointer; border: 1px solid #aaa;
+}
+.pager .pageNo{margin: 2px 2px; padding: 3px 8px;cursor: pointer;line-height: 20px;border: 1px solid #aaa;color: #333;}
+.pager .pageNo:hover, .pager .pageNo.selected { color: #fff;background: #327ea8;border: 1px solid #3279a0;}
+.pager input { margin: 0 5px; width: 40px;text-align: center; font-weight: bold;font-size: 14px;}
+
+/* grid end*/
+
+/* dialog start*/
+.mask {
+    background: #EEEEEE; position: absolute; left: 0; top: 0;
+    text-align: center; margin-top: 0; padding: 0;
+    filter: alpha(opacity=30); opacity: 0.3; width:100%; height:100%;
+}
+.dialog {
+    position: absolute; left: 0; top: 0; margin: 0 auto;
+    overflow: hidden; border: 1px solid #CCC; background: none;
+}
+.dialog>.head {
+    height: 32px; line-height: 32px; background-color: #99CC33;
+    overflow: hidden; white-space: nowrap; padding: 2px 4px;
+}
+.dialog>.head .icon { margin-top: 4px; }
+.dialog>.body { background-color: #FFF; overflow: auto; }
+.dialog .wait { text-align: center; padding: 5px; }
+.dialog .wait h3 { margin: 5px; }
+.dialog>.body>.bottom>.button {
+    float: right; padding: 4px 6px 4px 6px; background-color: #EEE;
+    border: 1px solid #CCC; margin-left: 4px;
+    text-align: center; height: 16px; line-height: 16px;
+}
+/*dialog end*/
+
+/*tabs start*/
+.tabs>.head {
+    height: 32px; overflow: hidden; white-space: nowrap;
+}
+.tabs>.hbar {
+    width: 100%; height: 2px; position: relative;
+    background-color: #DDD; z-index: 2; top: 32px;
+}
+.tabs>.head>.sbtn {
+    width: 32px; height: 32px; float: left;
+    background: url(tm-ts.png) repeat-x left bottom;
+}
+.tabs>.head>.sbtn span {
+    overflow: hidden; float: left; width: 16px; height: 16px;
+    margin: 4px; background-image: url(icons.png);
+}
+.tabs>.head>.left span { background-position: -96px -48px; }
+.tabs>.head>.right span { background-position: -32px -48px; }
+.tabs>.head>.main { height: 32px; overflow: hidden; float: left; }
+.tabs>.head>.main>.tt { white-space: nowrap; display: inline-block; }
+.tabs>.body {
+    border: 1px solid #DDD; border-top: 0px; background-color: #FFF; padding: 1px;
+}
+.tabs>.body>.main { padding: 0px; margin: 0px; overflow: auto;  }
+.tabs>.head .item {
+    -moz-user-select: none; cursor: pointer;
+    height: 34px; position: relative;
+    white-space: nowrap; display: inline-block;
+}
+.tabs>.head .item>.main {
+    float: left; color: #FFF; height: 34px;	line-height: 34px;
+    text-align: center; padding-left: 2px; font-weight: bold; min-width: 100px;
+}
+.tabs>.head .item.closeable>.main { min-width: 88px; }
+.tabs>.head .item>.xbtn {
+    float: left; height: 34px; width: 8px; overflow: hidden;
+}
+.tabs>.head .item>.xbtn>.icon { margin-left: -4px; }
+.tabs>.head .item>.xbtn>.icon:hover { background-position: -96px -128px; }
+.tabs>.head .item>.left { float: left; width: 6px; height: 34px; }
+.tabs>.head .item>.right { float: left; width: 6px; height: 34px; }
+.tabs>.head .normal { z-index: 1; }
+.tabs>.head .normal>.main { background: url(tm-bg.png) repeat-x; color: #FFF; }
+.tabs>.head .normal>.left { background: url(tm-l.png) no-repeat; }
+.tabs>.head .normal>.right { background: url(tm-r.png) no-repeat; }
+.tabs>.head .normal>.xbtn { background: url(tm-bg.png) repeat-x; }
+.tabs>.head .selected { z-index: 3; }
+.tabs>.head .selected>.left { background: url(tm-l-s.png) no-repeat; }
+.tabs>.head .selected>.main { background: url(tm-bg-s.png) repeat-x; color: #CC6601; }
+.tabs>.head .selected>.right { background: url(tm-r-s.png) no-repeat;}
+.tabs>.head .selected>.xbtn { background: url(tm-bg-s.png) repeat-x; }
+
+/*tabs end*/
+
+/*menu start*/
+.contextMenu {
+    position: absolute; z-index: 999; border: 1px solid #999;
+    padding: 0px; margin: 0px; display: none;
+}
+.contextMenu li {
+    list-style: none; padding: 0px; position: relative; white-space: nowrap;
+    line-height: 32px; height: 32px; cursor: pointer;
+    background-color: #333; color: #EEE;
+}
+.contextMenu li .icon { margin: 4px; }
+.contextMenu span.title { margin-right: 32px; }
+.contextMenu li ul {
+    position: absolute; display: none; padding: 0px; margin: 0px;
+    border: 1px solid #999; z-index: 999;
+}
+.contextMenu li.hover { color: #FFF; background-color: #3399FF; }
+.contextMenu li.disabled { color: #AAA; cursor: default; background-color: transparent; }
+
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+/*menu end*/
