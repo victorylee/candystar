@@ -4,7 +4,7 @@ class Broker extends CI_Controller {
 
     public function index()
     {
-        // test
+        // test 的萨达
         $this->smarty->view('broker/list.tpl');
     }
 
